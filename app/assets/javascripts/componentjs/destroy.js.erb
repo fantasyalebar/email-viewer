@@ -1,0 +1,13 @@
+$(document).ready(function(){
+	
+	$('.destroy').on('click', function(){
+		if(confirm("Are you sur ?")){
+			$.ajax({
+				url: '/emails' + this.parentElement.id,
+				type: 'DELETE',
+				success: function(r){
+	  			}
+	  		})
+	   	}
+ 	 })
+});

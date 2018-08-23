@@ -1,0 +1,22 @@
+<div class="container">
+    <h1>Create eamil !</h1>
+
+    <%= form_with model: @email do |f| %>
+	  	<div class="row">
+	        <div class="col form-group name">
+	            <%=f.label :object %>
+	        	<%=f.text_field :object, placeholder: "email object" %>
+	    	</div>
+
+
+	    	<div class="col form-group mail">
+		        <%=f.label :body %>
+		        <%=f.text_area :body, placeholder: "body" %>
+		    </div>
+		</div>
+
+		<div class="validation form-group"> 
+			<%= f.submit class: "btn btn-info btn-default" %>
+		</div>
+	<%end%>
+</div>

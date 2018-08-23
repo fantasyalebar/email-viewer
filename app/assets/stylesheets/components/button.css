@@ -1,0 +1,11 @@
+.object{
+    background-color:#35D0E9 ;
+    border: 1px solid black;
+	border-radius: 5px;
+    color: #1C2833;
+
+}
+button:hover{
+    background-color:white;
+    color:#1C2833;
+}

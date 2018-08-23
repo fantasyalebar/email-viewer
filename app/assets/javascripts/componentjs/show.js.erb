@@ -1,0 +1,16 @@
+$(document).ready(function(){
+	$(".email").hide();
+    $( "button" ).each(function( index ) {
+    	document.getElementById(index);
+
+        console.log( index + ": " + $( this ).text() );
+		$("#object"+index).click(function(){
+			$('#object'+index).css("background-color", "yellow");
+			$('#email'+index).css("background-color", "yellow");
+			$('#email'+index).toggle();
+			$('#delete'+index).toggle();
+			
+		});
+	});
+});
+

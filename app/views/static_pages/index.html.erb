@@ -1,0 +1,38 @@
+<div class="container">
+	<h1>Welcome to our super🏋🏿 site</h1>
+
+
+	<table>
+		<tr>
+			<th>Email</th>
+			<th>Content</th> 
+			<th>Option</th>
+		</tr>
+		<% @emails.each do |email| %>
+		<tr id="<%= email.id %>">
+			<td> <button type="button" id="object<%= email.id %>" class="object btn btn-link" > 
+				<%= email.object %> </button></td>
+			<td class="email" id="email<%= email.id %>"> <%= email.body %><br></td>
+		    <td id="delete<%= email.id %>" class="email destroy btn btn-danger btn-sm">Delete</td>
+		</tr>
+		<% end %>
+	</table>
+	
+
+		<table>
+			<tr>
+				<th>Email</th>
+				<th>Content</th> 
+			</tr>
+			<tr id="testid">
+				<td> <button id="mirc"> test </button></td>
+				<td class="t">jeste un truc c tout </td>
+				<br>
+				<td class=" destroy btn btn-danger btn-sm">Delete</td>
+			</tr>
+		</table>
+
+	<%= render 'layouts/form' %>
+</div>
+
+
